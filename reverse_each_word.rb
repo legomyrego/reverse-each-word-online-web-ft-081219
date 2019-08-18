@@ -1,5 +1,6 @@
 
-
 def reverse_each_word(sentence)
-  sentence.split.collect do |word| word.reverse.join(" ") end
-en
+  sentence.split.collect {|word| word.reverse}.join(" ")
+end
+
+puts reverse_each_word("hey my name is mark")
